@@ -1,16 +1,23 @@
-import { useState } from 'react';
 import './App.css';
-import TopAppBar from '../Components/TopAppBar';
-import Box from '@mui/material/Box';
+import Root from '../Components/Root';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Discover from '../Components/Discover';
+
+// import Root from './components/Root';
+// import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
-      <Box flexDirection="row">
-        <TopAppBar></TopAppBar>
-      </Box>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/main" element={<Root />} />
+          <Route path="main/:discover" element={<Discover />} />
+          {/* <Route path="invoices/create" element={<EditCreate />} />
+          <Route path="invoices/:id/edit" element={<EditCreate />} /> */}
+          <Route path="*" element={<p>Path not resolved</p>} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
