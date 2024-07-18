@@ -6,10 +6,14 @@ import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import CssBaseline from '@mui/material/CssBaseline';
+import { useNavigate } from 'react-router-dom';
 
 import Logo from '../src/assets/Polish_club_logo.png';
+import Cuisine from './Cuisine ';
 
 export default function TopAppBar() {
+  const navigate = useNavigate();
+
   return (
     <Box sx={{ flexGrow: 1 }}>
       {/* <CssBaseline /> */}
@@ -46,9 +50,18 @@ export default function TopAppBar() {
           // justifyContent="center"
         >
           {/* <Button color="inherit">Polska magia</Button> */}
-          <Button style={{ color: '#DC143C' }}>Kuchnia polska</Button>
+          <Button
+            style={{ color: '#DC143C' }}
+            onClick={() => {
+              {
+                navigate('/main/cuisine');
+              }
+            }}
+          >
+            Kuchnia polska
+          </Button>
           <Button style={{ color: '#DC143C' }}>Polskie tradycje</Button>
-          <Button style={{ color: '#DC143C' }}>Język polski</Button>
+          <Button style={{ color: '#DC143C' }}>Polskie miasta</Button>
           {/* <Button color="inherit">Studenci polecają</Button> */}
         </Toolbar>
       </AppBar>

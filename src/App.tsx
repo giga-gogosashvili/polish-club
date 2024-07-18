@@ -2,6 +2,7 @@ import './App.css';
 import Root from '../Components/Root';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Discover from '../Components/Discover';
+import Cuisine from '../Components/Cuisine ';
 
 // import Root from './components/Root';
 // import { BrowserRouter, Routes, Route } from 'react-router-dom';
@@ -11,10 +12,9 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/main" element={<Root />} />
-          <Route path="main/:discover" element={<Discover />} />
-          {/* <Route path="invoices/create" element={<EditCreate />} />
-          <Route path="invoices/:id/edit" element={<EditCreate />} /> */}
+          <Route path="/" element={<Root />} />
+          <Route path="main/discover" element={<Discover />} />
+          <Route path="main/cuisine" element={<Cuisine />} />
           <Route path="*" element={<p>Path not resolved</p>} />
         </Routes>
       </BrowserRouter>
