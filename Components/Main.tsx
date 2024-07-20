@@ -3,7 +3,7 @@ import Box from '@mui/material/Box';
 import MagdaCard from './MagdaCard';
 import GeneralCard from './GeneralCard';
 import BottomAppBar from './BottomAppBar';
-import DiscoverCard from './DiscoverCard';
+import UczSieCard from './UczSieCard';
 import { Grid } from '@mui/material';
 
 export default function Main() {
@@ -19,7 +19,7 @@ export default function Main() {
           justifyContent="center"
         >
           <MagdaCard />
-          <DiscoverCard />
+          <UczSieCard />
         </Grid>
         <BottomAppBar />
       </Box>
