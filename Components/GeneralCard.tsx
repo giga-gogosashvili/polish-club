@@ -16,7 +16,7 @@ export default function GeneralCard() {
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          Polski jest łatwy
+          Polski jest fantastyczny
         </Typography>
         <Typography variant="body2" color="text.secondary">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce posuere
