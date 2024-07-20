@@ -4,13 +4,14 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import mainphoto from 'src/assets/11235885_11070.jpg';
 
 export default function GeneralCard() {
   return (
     <Card sx={{ maxWidth: 900 }}>
       <CardMedia
         sx={{ height: 400 }}
-        image="src/assets/11235885_11070.jpg"
+        image={mainphoto}
         title="Magdalena Knapik"
       />
       <CardContent>
