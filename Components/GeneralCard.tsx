@@ -4,7 +4,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import mainphoto from 'src/assets/11235885_11070.jpg';
+import mainphoto from '../src/assets/11235885_11070.jpg';
 
 export default function GeneralCard() {
   return (
