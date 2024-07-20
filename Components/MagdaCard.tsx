@@ -11,7 +11,7 @@ export default function MagdaCard() {
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia
         sx={{ height: 340 }}
-        image="src/assets/IMG_0245.JPG"
+        image={magdaphoto}
         title="Magdalena Knapik"
       />
       <CardContent>
