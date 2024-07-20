@@ -4,6 +4,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import magdaphoto from '../src/assets/1200x1200_vector_PL-6.jpg';
 
 export default function MagdaCard() {
   return (
