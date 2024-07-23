@@ -10,7 +10,7 @@ export default function GeneralCard() {
   return (
     <Card sx={{ maxWidth: 900 }}>
       <CardMedia
-        sx={{ height: 400 }}
+        sx={{ height: 400, width: 'auto' }}
         image={mainphoto}
         title="Magdalena Knapik"
       />
@@ -19,9 +19,9 @@ export default function GeneralCard() {
           Polski jest fantastyczny
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce posuere
-          non dolor nec facilisis. Suspendisse non commodo elit, non malesuada
-          orci. Integer scelerisque massa sed sollicitudin interdum.
+          Język polski jest bardzo praktyczny, dobrze go znać! Jest też bardzo
+          interesujący i lekcje polskiego ze mną mogą być miłe i ciekawe. Polski
+          jest naprawdę fantastyczny i magiczny.
         </Typography>
       </CardContent>
       <CardActions>

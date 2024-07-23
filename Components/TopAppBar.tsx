@@ -4,7 +4,7 @@ import Toolbar from '@mui/material/Toolbar';
 import Button from '@mui/material/Button';
 import { useNavigate } from 'react-router-dom';
 
-import Logo from '../src/assets/Polish_club_logo.png';
+import Logo from '../public/assets/Polish_club_logo.png';
 
 export default function TopAppBar() {
   const navigate = useNavigate();

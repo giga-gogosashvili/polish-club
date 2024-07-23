@@ -7,25 +7,22 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { useNavigate } from 'react-router-dom';
+import uczsie from '../public/assets/ucz_sie.jpg';
 
 export default function DiscoverCard() {
   const navigate = useNavigate();
 
   return (
     <Card sx={{ maxWidth: 345 }}>
-      <CardMedia
-        sx={{ height: 340 }}
-        image="src/assets/1200x1200_vector_PL-6.jpg"
-        title="Magdalena Knapik"
-      />
+      <CardMedia sx={{ height: 340 }} image={uczsie} title="Ucz Sie" />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          Magdalena Knapik
+          Ucz się języka polskiego
         </Typography>
         <Typography variant="body2" color="text.secondary">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce posuere
           non dolor nec facilisis. Suspendisse non commodo elit, non malesuada
-          orci. Integer scelerisque massa sed sollicitudin interdum.
+          orci. Integer scelerisque massa.
         </Typography>
       </CardContent>
       <CardActions>
@@ -33,7 +30,7 @@ export default function DiscoverCard() {
           size="small"
           onClick={() => {
             {
-              navigate('/main/discover');
+              navigate('/main/uczsie');
             }
           }}
         >

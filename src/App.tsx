@@ -1,7 +1,7 @@
 import './App.css';
 import Root from '../Components/Root';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Discover from '../Components/Discover';
+import UczSie from '../Components/UczSie';
 import Cuisine from '../Components/Cuisine ';
 
 // import Root from './components/Root';
@@ -13,7 +13,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Root />} />
-          <Route path="main/discover" element={<Discover />} />
+          <Route path="main/uczsie" element={<UczSie />} />
           <Route path="main/cuisine" element={<Cuisine />} />
           <Route path="*" element={<p>Path not resolved</p>} />
         </Routes>

@@ -19,9 +19,9 @@ export default function MagdaCard() {
           Magdalena Knapik
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce posuere
-          non dolor nec facilisis. Suspendisse non commodo elit, non malesuada
-          orci. Integer scelerisque massa sed sollicitudin interdum.
+          Pasjonatka języka polskiego. Pasjonatka języka polskiego. Pasjonatka
+          języka polskiego. Pasjonatka języka polskiego. Pasjonatka języka
+          polskiego. Pasjonatka języka polskiego.
         </Typography>
       </CardContent>
       <CardActions>
