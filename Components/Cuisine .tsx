@@ -1,7 +1,11 @@
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Zurek from '../public/assets/Tasks/zurek.png';
+import CoTo from '../public/assets/Tasks/coto.png';
 import { Typography } from '@mui/material';
+import Link from '@mui/material/Link';
+
+const preventDefault = (event: React.SyntheticEvent) => event.preventDefault();
 
 export default function Cuisine() {
   return (
@@ -15,18 +19,33 @@ export default function Cuisine() {
 
       <Grid container spacing={2}>
         <Grid item xs={6}>
-          <Box
-            component="img"
-            sx={{
-              height: 'auto',
+          <Link href="https://wordwall.net/pl/resource/30511797/polski-dla-cudzoziemc%c3%b3w/%c5%bcurek">
+            <Box
+              component="img"
+              sx={{
+                height: 'auto',
 
-              maxWidth: 500,
-            }}
-            alt="The house from the offer."
-            src={Zurek}
-          />
+                maxWidth: 500,
+              }}
+              alt="The house from the offer."
+              src={Zurek}
+            />
+          </Link>
         </Grid>
-        <Grid item xs={6}></Grid>
+        <Grid item xs={6}>
+          <Link href="https://wordwall.net/pl/resource/24429640/polski-dla-cudzoziemc%c3%b3w/kurpiowskie-jedzenie">
+            <Box
+              component="img"
+              sx={{
+                height: 'auto',
+
+                maxWidth: 500,
+              }}
+              alt="The house from the offer."
+              src={CoTo}
+            />
+          </Link>
+        </Grid>
         <Grid item xs={6}></Grid>
         <Grid item xs={6}></Grid>
       </Grid>

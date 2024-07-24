@@ -49,7 +49,7 @@ export default function TopAppBar() {
             style={{ color: '#DC143C' }}
             onClick={() => {
               {
-                navigate('/main/cuisine');
+                navigate('/cuisine');
               }
             }}
           >

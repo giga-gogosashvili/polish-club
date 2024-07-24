@@ -13,8 +13,8 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Root />} />
-          <Route path="main/uczsie" element={<UczSie />} />
-          <Route path="main/cuisine" element={<Cuisine />} />
+          <Route path="/uczsie" element={<UczSie />} />
+          <Route path="/cuisine" element={<Cuisine />} />
           <Route path="*" element={<p>Path not resolved</p>} />
         </Routes>
       </BrowserRouter>
