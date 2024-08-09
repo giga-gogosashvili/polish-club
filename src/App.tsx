@@ -2,7 +2,7 @@ import './App.css';
 import Root from '../Components/Root';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import UczSie from '../Components/UczSie';
-import Cuisine from '../Components/Cuisine ';
+import Cuisine from '../Components/Cuisine';
 
 // import Root from './components/Root';
 // import { BrowserRouter, Routes, Route } from 'react-router-dom';

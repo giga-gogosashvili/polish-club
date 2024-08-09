@@ -12,6 +12,7 @@ import Image from 'mui-image';
 import Divider from '@mui/material/Divider';
 import Fab from '@mui/material/Fab';
 import PlayCircleIcon from '@mui/icons-material/PlayCircle';
+import GoBack from './GoBack';
 
 export default function Cuisine() {
   const linkzurek =
@@ -24,6 +25,7 @@ export default function Cuisine() {
     'https://wordwall.net/pl/resource/74320304/polski-dla-cudzoziemc%c3%b3w/polska-kuchnia';
   return (
     <Box sx={{ flexGrow: 1 }}>
+      <GoBack></GoBack>
       <Grid
         container
         spacing={2}
