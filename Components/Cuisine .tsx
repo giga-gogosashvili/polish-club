@@ -10,6 +10,8 @@ import { Typography } from '@mui/material';
 import Link from '@mui/material/Link';
 import Image from 'mui-image';
 import Divider from '@mui/material/Divider';
+import Fab from '@mui/material/Fab';
+import NavigationIcon from '@mui/icons-material/Navigation';
 
 export default function Cuisine() {
   return (
@@ -91,7 +93,14 @@ export default function Cuisine() {
               src={Zurek}
             />
           </Link>
+          <Box sx={{ '& > :not(style)': { m: 1 } }}>
+            <Fab variant="extended">
+              <NavigationIcon sx={{ mr: 1 }} />
+              Zagraj
+            </Fab>
+          </Box>
         </Grid>
+
         <Grid item xs={6}>
           <Link href="https://wordwall.net/pl/resource/24429640/polski-dla-cudzoziemc%c3%b3w/kurpiowskie-jedzenie">
             <Box
@@ -104,6 +113,12 @@ export default function Cuisine() {
               src={CoTo}
             />
           </Link>
+          <Box sx={{ '& > :not(style)': { m: 1 } }}>
+            <Fab variant="extended">
+              <NavigationIcon sx={{ mr: 1 }} />
+              Zagraj
+            </Fab>
+          </Box>
         </Grid>
         <Grid item xs={6}>
           <Link href="https://wordwall.net/pl/resource/34142936/polski-dla-cudzoziemc%c3%b3w/polska-kuchnia">
