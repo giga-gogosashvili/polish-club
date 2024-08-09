@@ -11,9 +11,17 @@ import Link from '@mui/material/Link';
 import Image from 'mui-image';
 import Divider from '@mui/material/Divider';
 import Fab from '@mui/material/Fab';
-import NavigationIcon from '@mui/icons-material/Navigation';
+import PlayCircleIcon from '@mui/icons-material/PlayCircle';
 
 export default function Cuisine() {
+  const linkzurek =
+    'https://wordwall.net/pl/resource/30511797/polski-dla-cudzoziemc%c3%b3w/%c5%bcurek';
+  const linkcoto =
+    'https://wordwall.net/pl/resource/24429640/polski-dla-cudzoziemc%c3%b3w/kurpiowskie-jedzenie';
+  const linkfalsz =
+    'https://wordwall.net/pl/resource/34142936/polski-dla-cudzoziemc%c3%b3w/polska-kuchnia';
+  const linkguess =
+    'https://wordwall.net/pl/resource/74320304/polski-dla-cudzoziemc%c3%b3w/polska-kuchnia';
   return (
     <Box sx={{ flexGrow: 1 }}>
       <Grid
@@ -46,31 +54,9 @@ export default function Cuisine() {
         </Grid>
         <Grid item xs={5}>
           <Image width={400} src={gotuj} />
-
-          {/* <Box
-            component="img"
-            sx={{
-              height: 'auto',
-
-              maxWidth: 500,
-            }}
-            alt="The house from the offer."
-            src={gotuj}
-          /> */}
         </Grid>
       </Grid>
-      {/* <Card>
-        <CardMedia sx={{ height: 600, width: 'auto' }} image={gotuj} />
-        <CardContent>
-          <Typography variant="body2" color="text.secondary">
-            Kuchnia polska jest bogata i ciekawa. Aktualna kuchnia jest trochę
-            inna niż ta, 100 lat temu czy 300 lat temu. Ważne: Polacy kochają
-            zupy, chleb, kanapki i mogą jeść obiady na słodko i na słono. Proszę
-            robić zadania i quizy - tu są interesujące informacje.{' '}
-          </Typography>
-        </CardContent>
-      </Card> */}
-      {/* <Typography variant="h2">Kuchnia polska</Typography> */}
+
       <Divider sx={{ bgcolor: 'white' }}> </Divider>
       <Typography fontWeight="700" marginTop={5}>
         Proszę robić zadania i quizy - tu są interesujące informacje.
@@ -82,7 +68,7 @@ export default function Cuisine() {
         flexDirection={{ xs: 'column', lg: 'row' }}
       >
         <Grid item xs={6}>
-          <Link href="https://wordwall.net/pl/resource/30511797/polski-dla-cudzoziemc%c3%b3w/%c5%bcurek">
+          <Link href={linkzurek}>
             <Box
               component="img"
               sx={{
@@ -94,15 +80,17 @@ export default function Cuisine() {
             />
           </Link>
           <Box sx={{ '& > :not(style)': { m: 1 } }}>
-            <Fab variant="extended">
-              <NavigationIcon sx={{ mr: 1 }} />
-              Zagraj
-            </Fab>
+            <Link href={linkzurek}>
+              <Fab variant="extended" sx={{ marginTop: 1 }}>
+                <PlayCircleIcon sx={{ mr: 1 }} />
+                Zagraj
+              </Fab>
+            </Link>
           </Box>
         </Grid>
 
         <Grid item xs={6}>
-          <Link href="https://wordwall.net/pl/resource/24429640/polski-dla-cudzoziemc%c3%b3w/kurpiowskie-jedzenie">
+          <Link href={linkcoto}>
             <Box
               component="img"
               sx={{
@@ -114,37 +102,55 @@ export default function Cuisine() {
             />
           </Link>
           <Box sx={{ '& > :not(style)': { m: 1 } }}>
-            <Fab variant="extended">
-              <NavigationIcon sx={{ mr: 1 }} />
-              Zagraj
-            </Fab>
+            <Link href={linkcoto}>
+              <Fab variant="extended" sx={{ marginTop: 1 }}>
+                <PlayCircleIcon sx={{ mr: 1 }} />
+                Zagraj
+              </Fab>
+            </Link>
           </Box>
         </Grid>
         <Grid item xs={6}>
-          <Link href="https://wordwall.net/pl/resource/34142936/polski-dla-cudzoziemc%c3%b3w/polska-kuchnia">
+          <Link href={linkfalsz}>
             <Box
               component="img"
               sx={{
                 height: 'auto',
                 maxWidth: 500,
               }}
-              alt="Co to?"
+              alt="falsz"
               src={falsz}
             />
           </Link>
+          <Box sx={{ '& > :not(style)': { m: 1 } }}>
+            <Link href={linkfalsz}>
+              <Fab variant="extended" sx={{ marginTop: 1 }}>
+                <PlayCircleIcon sx={{ mr: 1 }} />
+                Zagraj
+              </Fab>
+            </Link>
+          </Box>
         </Grid>
         <Grid item xs={6}>
-          <Link href="https://wordwall.net/pl/resource/74320304/polski-dla-cudzoziemc%c3%b3w/polska-kuchnia">
+          <Link href={linkguess}>
             <Box
               component="img"
               sx={{
                 height: 'auto',
                 maxWidth: 500,
               }}
-              alt="Co to?"
+              alt="guess"
               src={guess}
             />
           </Link>
+          <Box sx={{ '& > :not(style)': { m: 1 } }}>
+            <Link href={linkguess}>
+              <Fab variant="extended" sx={{ marginTop: 1 }}>
+                <PlayCircleIcon sx={{ mr: 1 }} />
+                Zagraj
+              </Fab>
+            </Link>
+          </Box>
         </Grid>
       </Grid>
     </Box>
