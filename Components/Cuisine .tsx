@@ -14,7 +14,12 @@ import Divider from '@mui/material/Divider';
 export default function Cuisine() {
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <Grid container spacing={2} marginBottom={10}>
+      <Grid
+        container
+        spacing={2}
+        marginBottom={10}
+        flexDirection={{ xs: 'column', lg: 'row' }}
+      >
         <Grid
           item
           xs={7}
@@ -33,7 +38,7 @@ export default function Cuisine() {
           </Typography>
         </Grid>
         <Grid item xs={5}>
-          <Image width={400} src={gotuj} showLoading />
+          <Image width={400} src={gotuj} />
 
           {/* <Box
             component="img"
@@ -60,7 +65,12 @@ export default function Cuisine() {
       </Card> */}
       {/* <Typography variant="h2">Kuchnia polska</Typography> */}
       <Divider sx={{ bgcolor: 'white' }}> </Divider>
-      <Grid container spacing={2} marginTop={10}>
+      <Grid
+        container
+        spacing={2}
+        marginTop={10}
+        flexDirection={{ xs: 'column', lg: 'row' }}
+      >
         <Grid item xs={6}>
           <Link href="https://wordwall.net/pl/resource/30511797/polski-dla-cudzoziemc%c3%b3w/%c5%bcurek">
             <Box
