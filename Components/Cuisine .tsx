@@ -31,10 +31,15 @@ export default function Cuisine() {
           <Typography variant="h3">Kuchnia polska</Typography>
 
           <Typography>
-            Kuchnia polska jest bogata i ciekawa. Aktualna kuchnia jest trochę
-            inna niż ta, 100 lat temu czy 300 lat temu. Ważne: Polacy kochają
-            zupy, chleb, kanapki i mogą jeść obiady na słodko i na słono. Proszę
-            robić zadania i quizy - tu są interesujące informacje.
+            Kuchnia polska jest bogata i ciekawa.
+            <Box>
+              Aktualna kuchnia jest trochę inna niż ta, 100 lat temu czy 300 lat
+              temu.
+            </Box>
+            <Box>
+              Ważne: Polacy kochają zupy, chleb, kanapki i mogą jeść obiady na
+              słodko i na słono.
+            </Box>
           </Typography>
         </Grid>
         <Grid item xs={5}>
@@ -65,6 +70,9 @@ export default function Cuisine() {
       </Card> */}
       {/* <Typography variant="h2">Kuchnia polska</Typography> */}
       <Divider sx={{ bgcolor: 'white' }}> </Divider>
+      <Typography fontWeight="700" marginTop={5}>
+        Proszę robić zadania i quizy - tu są interesujące informacje.
+      </Typography>
       <Grid
         container
         spacing={2}
