@@ -16,20 +16,24 @@ export default function GoBack() {
           alignItems: 'left',
           alignContent: 'center',
           justifyContent: 'left',
-          width: '100%',
+          // width: '100%',
           height: 5,
         }}
       >
-        <BottomNavigation showLabels onClick={() => navigate(-1)}>
+        <BottomNavigation
+          showLabels
+          onClick={() => navigate(-1)}
+          sx={{ backgroundColor: 'transparent' }}
+        >
           <BottomNavigationAction
             // label="Go back"
             // disableRipple
             icon={
               <ArrowBackIosIcon
-              // sx={{
-              //   height: '20px',
-              //   //   color: '#7C5DFA',
-              // }}
+                sx={{
+                  //   height: '20px',
+                  color: '#fff',
+                }}
               />
             }
             // sx={{
@@ -38,10 +42,6 @@ export default function GoBack() {
           />
         </BottomNavigation>
       </Box>
-      <ArrowBackIosIcon
-        onClick={() => navigate(-1)}
-        sx={{ justifyContent: 'left' }}
-      />
     </>
   );
 }
