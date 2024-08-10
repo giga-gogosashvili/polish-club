@@ -39,6 +39,7 @@ export default function TopAppBar() {
             //   typography: 'body1',
             // },
             justifyContent: 'space-between',
+            backgroundColor: '#000',
             // maxWidth: '500px',
           }}
           // alignItems="center"
@@ -46,7 +47,7 @@ export default function TopAppBar() {
         >
           {/* <Button color="inherit">Polska magia</Button> */}
           <Button
-            style={{ color: '#DC143C' }}
+            style={{ color: '#fff' }}
             onClick={() => {
               {
                 navigate('/cuisine');
@@ -55,8 +56,8 @@ export default function TopAppBar() {
           >
             Kuchnia polska
           </Button>
-          <Button style={{ color: '#DC143C' }}>Polskie tradycje</Button>
-          <Button style={{ color: '#DC143C' }}>Polskie miasta</Button>
+          <Button style={{ color: '#fff' }}>Polskie tradycje</Button>
+          <Button style={{ color: '#fff' }}>Polskie miasta</Button>
           {/* <Button color="inherit">Studenci polecają</Button> */}
         </Toolbar>
       </AppBar>

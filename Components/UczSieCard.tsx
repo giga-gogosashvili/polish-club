@@ -13,30 +13,29 @@ export default function DiscoverCard() {
   const navigate = useNavigate();
 
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ maxWidth: 345, backgroundColor: 'transparent' }}>
       <CardMedia sx={{ height: 340 }} image={uczsie} title="Ucz Sie" />
       <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-          Ucz się języka polskiego
-        </Typography>
-        <Typography variant="body2" color="text.secondary">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce posuere
-          non dolor nec facilisis. Suspendisse non commodo elit, non malesuada
-          orci. Integer scelerisque massa.
-        </Typography>
-      </CardContent>
-      <CardActions>
-        <Button
-          size="small"
+        <Typography
+          gutterBottom
+          variant="h5"
+          component="div"
+          color="#fff"
           onClick={() => {
             {
               navigate('/main/uczsie');
             }
           }}
         >
-          Więcej
-        </Button>
-      </CardActions>
+          Ucz się języka polskiego
+        </Typography>
+
+        <Typography variant="body2" color="#fff">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce posuere
+          non dolor nec facilisis. Suspendisse non commodo elit, non malesuada
+          orci. Integer scelerisque massa.
+        </Typography>
+      </CardContent>
     </Card>
   );
 }
