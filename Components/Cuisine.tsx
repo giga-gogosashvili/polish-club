@@ -47,7 +47,7 @@ export default function Cuisine() {
               sx={{
                 backgroundColor: '#2F4A8C',
                 width: '100%',
-                height: '100px',
+                height: '20%',
                 alignContent: 'center',
               }}
             >

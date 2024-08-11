@@ -6,7 +6,11 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import magdaphoto from '../public/assets/IMG_0245.png';
 
+import { useNavigate } from 'react-router-dom';
+
 export default function MagdaCard() {
+  const navigate = useNavigate();
+
   return (
     <Card sx={{ maxWidth: 345, backgroundColor: '#fff' }}>
       <CardMedia
@@ -15,7 +19,16 @@ export default function MagdaCard() {
         title="Magdalena Knapik"
       />
       <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
+        <Typography
+          gutterBottom
+          variant="h5"
+          component="div"
+          onClick={() => {
+            {
+              navigate('/magda');
+            }
+          }}
+        >
           Magdalena Knapik
         </Typography>
         <Typography variant="body2">
