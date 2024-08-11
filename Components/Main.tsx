@@ -18,6 +18,8 @@ export default function Main() {
           alignItems="center"
           justifyContent="space-around"
           sx={{ backgroundColor: '#CBDFFA' }}
+          padding="20px 0"
+          marginBottom="40px"
         >
           <MagdaCard />
           <UczSieCard />

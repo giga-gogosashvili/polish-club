@@ -14,6 +14,7 @@ import Fab from '@mui/material/Fab';
 import PlayCircleIcon from '@mui/icons-material/PlayCircle';
 import GoBack from './GoBack';
 import BottomAppBar from './BottomAppBar';
+import TaskAltIcon from '@mui/icons-material/TaskAlt';
 
 export default function Cuisine() {
   const linkzurek =
@@ -42,11 +43,20 @@ export default function Cuisine() {
             justifyContent="center"
             alignItems="center"
           >
-            <Typography variant="h3" color="#2F4A8C">
-              Kuchnia polska
-            </Typography>
+            <Box
+              sx={{
+                backgroundColor: '#2F4A8C',
+                width: '100%',
+                height: '100px',
+                alignContent: 'center',
+              }}
+            >
+              <Typography variant="h3" color="#fff">
+                Kuchnia polska
+              </Typography>
+            </Box>
 
-            <Typography color="#2F4A8C">
+            <Typography color="#000">
               Kuchnia polska jest bogata i ciekawa.
               <Box>
                 Aktualna kuchnia jest trochę inna niż ta, 100 lat temu czy 300
@@ -64,7 +74,9 @@ export default function Cuisine() {
         </Grid>
 
         <Divider color="#fff"> </Divider>
-        <Typography fontWeight="700" marginTop={5} color="#2F4A8C">
+        <TaskAltIcon sx={{ marginTop: '20px', color: '#000' }}></TaskAltIcon>
+
+        <Typography fontWeight="700" color="#000">
           Proszę robić zadania i quizy - tu są interesujące informacje.
         </Typography>
         <Grid
@@ -72,6 +84,7 @@ export default function Cuisine() {
           spacing={2}
           marginTop={10}
           flexDirection={{ xs: 'column', lg: 'row' }}
+          paddingBottom="20px"
         >
           <Grid item xs={6}>
             <Link href={linkzurek}>
@@ -87,7 +100,10 @@ export default function Cuisine() {
             </Link>
             <Box sx={{ '& > :not(style)': { m: 1 } }}>
               <Link href={linkzurek}>
-                <Fab variant="extended" sx={{ marginTop: 1 }}>
+                <Fab
+                  variant="extended"
+                  sx={{ marginTop: 1, backgroundColor: '#CBDFFA' }}
+                >
                   <PlayCircleIcon sx={{ mr: 1 }} />
                   Zagraj
                 </Fab>
@@ -109,7 +125,10 @@ export default function Cuisine() {
             </Link>
             <Box sx={{ '& > :not(style)': { m: 1 } }}>
               <Link href={linkcoto}>
-                <Fab variant="extended" sx={{ marginTop: 1 }}>
+                <Fab
+                  variant="extended"
+                  sx={{ marginTop: 1, backgroundColor: '#CBDFFA' }}
+                >
                   <PlayCircleIcon sx={{ mr: 1 }} />
                   Zagraj
                 </Fab>
@@ -130,7 +149,10 @@ export default function Cuisine() {
             </Link>
             <Box sx={{ '& > :not(style)': { m: 1 } }}>
               <Link href={linkfalsz}>
-                <Fab variant="extended" sx={{ marginTop: 1 }}>
+                <Fab
+                  variant="extended"
+                  sx={{ marginTop: 1, backgroundColor: '#CBDFFA' }}
+                >
                   <PlayCircleIcon sx={{ mr: 1 }} />
                   Zagraj
                 </Fab>
@@ -151,7 +173,10 @@ export default function Cuisine() {
             </Link>
             <Box sx={{ '& > :not(style)': { m: 1 } }}>
               <Link href={linkguess}>
-                <Fab variant="extended" sx={{ marginTop: 1 }}>
+                <Fab
+                  variant="extended"
+                  sx={{ marginTop: 1, backgroundColor: '#CBDFFA' }}
+                >
                   <PlayCircleIcon sx={{ mr: 1 }} />
                   Zagraj
                 </Fab>
