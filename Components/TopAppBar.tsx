@@ -10,14 +10,18 @@ export default function TopAppBar() {
   const navigate = useNavigate();
 
   return (
-    <Box sx={{ flexGrow: 1 }}>
+    <Box sx={{ flexGrow: 1, width: '100%', boxShadow: 'none' }}>
       {/* <CssBaseline /> */}
 
       <AppBar
         position="static"
-        style={{ width: '100%', backgroundColor: '#FBFAF9' }}
+        style={{
+          width: '100%',
+          backgroundColor: 'transparent',
+          boxShadow: 'none',
+        }}
       >
-        <Box>
+        <Box marginBottom="20px">
           {' '}
           <div>
             <img

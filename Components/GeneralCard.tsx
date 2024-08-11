@@ -6,7 +6,9 @@ import mainphoto from '../public/assets/Untitled (5).png';
 
 export default function GeneralCard() {
   return (
-    <Card sx={{ maxWidth: 900, backgroundColor: 'transparent' }}>
+    <Card
+      sx={{ maxWidth: 900, backgroundColor: 'transparent', boxShadow: 'none' }}
+    >
       <CardMedia
         sx={{ height: 400, width: 'auto' }}
         image={mainphoto}

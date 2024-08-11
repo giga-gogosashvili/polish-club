@@ -82,7 +82,7 @@ export default function Cuisine() {
         <Grid
           container
           spacing={2}
-          marginTop={10}
+          marginTop={5}
           flexDirection={{ xs: 'column', lg: 'row' }}
           paddingBottom="20px"
         >
