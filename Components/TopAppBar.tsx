@@ -39,7 +39,7 @@ export default function TopAppBar() {
             //   typography: 'body1',
             // },
             justifyContent: 'space-between',
-            backgroundColor: '#000',
+            backgroundColor: '#2F4A8C',
             // maxWidth: '500px',
           }}
           // alignItems="center"

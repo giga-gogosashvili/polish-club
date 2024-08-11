@@ -8,17 +8,17 @@ import magdaphoto from '../public/assets/IMG_0245.png';
 
 export default function MagdaCard() {
   return (
-    <Card sx={{ maxWidth: 345, backgroundColor: 'transparent' }}>
+    <Card sx={{ maxWidth: 345, backgroundColor: '#fff' }}>
       <CardMedia
         sx={{ height: 340 }}
         image={magdaphoto}
         title="Magdalena Knapik"
       />
       <CardContent>
-        <Typography gutterBottom variant="h5" component="div" color="#fff">
+        <Typography gutterBottom variant="h5" component="div">
           Magdalena Knapik
         </Typography>
-        <Typography variant="body2" color="#fff">
+        <Typography variant="body2">
           Pasjonatka języka polskiego. Pasjonatka języka polskiego. Pasjonatka
           języka polskiego. Pasjonatka języka polskiego. Pasjonatka języka
           polskiego. Pasjonatka języka polskiego.

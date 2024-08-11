@@ -42,9 +42,11 @@ export default function Cuisine() {
             justifyContent="center"
             alignItems="center"
           >
-            <Typography variant="h3">Kuchnia polska</Typography>
+            <Typography variant="h3" color="#2F4A8C">
+              Kuchnia polska
+            </Typography>
 
-            <Typography>
+            <Typography color="#2F4A8C">
               Kuchnia polska jest bogata i ciekawa.
               <Box>
                 Aktualna kuchnia jest trochę inna niż ta, 100 lat temu czy 300
@@ -61,8 +63,8 @@ export default function Cuisine() {
           </Grid>
         </Grid>
 
-        <Divider sx={{ bgcolor: 'white' }}> </Divider>
-        <Typography fontWeight="700" marginTop={5}>
+        <Divider color="#fff"> </Divider>
+        <Typography fontWeight="700" marginTop={5} color="#2F4A8C">
           Proszę robić zadania i quizy - tu są interesujące informacje.
         </Typography>
         <Grid

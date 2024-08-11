@@ -13,14 +13,13 @@ export default function DiscoverCard() {
   const navigate = useNavigate();
 
   return (
-    <Card sx={{ maxWidth: 345, backgroundColor: 'transparent' }}>
+    <Card sx={{ maxWidth: 345, backgroundColor: '#fff' }}>
       <CardMedia sx={{ height: 340 }} image={uczsie} title="Ucz Sie" />
       <CardContent>
         <Typography
           gutterBottom
           variant="h5"
           component="div"
-          color="#fff"
           onClick={() => {
             {
               navigate('/main/uczsie');
@@ -30,7 +29,7 @@ export default function DiscoverCard() {
           Ucz się języka polskiego
         </Typography>
 
-        <Typography variant="body2" color="#fff">
+        <Typography variant="body2">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce posuere
           non dolor nec facilisis. Suspendisse non commodo elit, non malesuada
           orci. Integer scelerisque massa.

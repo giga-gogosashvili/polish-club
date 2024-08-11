@@ -9,14 +9,15 @@ import { Grid } from '@mui/material';
 export default function Main() {
   return (
     <>
-      <Box flexDirection="row">
+      <Box flexDirection="row" sx={{ backgroundColor: '#FBFAF9' }}>
         <TopAppBar></TopAppBar>
         <GeneralCard />
         <Grid
           container
           direction="row"
           alignItems="center"
-          justifyContent="center"
+          justifyContent="space-around"
+          sx={{ backgroundColor: '#CBDFFA' }}
         >
           <MagdaCard />
           <UczSieCard />

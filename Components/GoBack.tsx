@@ -32,7 +32,7 @@ export default function GoBack() {
               <ArrowBackIosIcon
                 sx={{
                   //   height: '20px',
-                  color: '#fff',
+                  color: '#6A9BE6',
                 }}
               />
             }
