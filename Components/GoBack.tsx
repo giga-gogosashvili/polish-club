@@ -10,9 +10,11 @@ export default function GoBack() {
   return (
     <>
       <Box
+        display="flex"
+        flexDirection="row"
         sx={{
-          display: 'flex',
-          flexDirection: 'row',
+          // display: 'flex',
+          // flexDirection: 'row',
           alignItems: 'left',
           alignContent: 'center',
           justifyContent: 'left',
