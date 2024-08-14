@@ -27,164 +27,170 @@ export default function Cuisine() {
     'https://wordwall.net/pl/resource/74320304/polski-dla-cudzoziemc%c3%b3w/polska-kuchnia';
   return (
     <>
-      <Box sx={{ flexGrow: 1 }}>
-        <GoBack></GoBack>
+      {/* <Box sx={{ flexGrow: 1 }} alignItems="center"> */}
+      <GoBack></GoBack>
+      <Grid
+        container
+        // alignItems={{ xs: 'center', lg: 'normal' }}
+        direction={{ xs: 'column', lg: 'row' }}
+        // alignItems="center"
+        // justifyContent="space-around"
+        spacing={2}
+        marginBottom={10}
+        // flexDirection={{ xs: 'column', lg: 'row' }}
+      >
         <Grid
+          item
+          xs={7}
           container
-          spacing={2}
-          marginBottom={10}
-          flexDirection={{ xs: 'column', lg: 'row' }}
+          // alignItems={{ xs: 'center', lg: 'normal' }}
+          // direction="row"
+          // justifyContent="center"
+          alignItems="center"
         >
-          <Grid
-            item
-            xs={7}
-            container
-            direction="row"
-            justifyContent="center"
-            alignItems="center"
+          <Box
+            sx={{
+              backgroundColor: '#2F4A8C',
+              width: '100%',
+              height: '20%',
+              alignContent: 'center',
+            }}
           >
-            <Box
-              sx={{
-                backgroundColor: '#2F4A8C',
-                width: '100%',
-                height: '20%',
-                alignContent: 'center',
-              }}
-            >
-              <Typography variant="h3" color="#fff">
-                Kuchnia polska
-              </Typography>
-            </Box>
-
-            <Typography color="#000">
-              Kuchnia polska jest bogata i ciekawa.
-              <Box>
-                Aktualna kuchnia jest trochę inna niż ta, 100 lat temu czy 300
-                lat temu.
-              </Box>
-              <Box>
-                Ważne: Polacy kochają zupy, chleb, kanapki i mogą jeść obiady na
-                słodko i na słono.
-              </Box>
+            <Typography variant="h3" color="#fff">
+              Kuchnia polska
             </Typography>
-          </Grid>
-          <Grid item xs={5}>
-            <Image width={400} src={gotuj} />
-          </Grid>
+          </Box>
+
+          <Typography color="#000">
+            Kuchnia polska jest bogata i ciekawa.
+            <Box>
+              Aktualna kuchnia jest trochę inna niż ta, 100 lat temu czy 300 lat
+              temu.
+            </Box>
+            <Box>
+              Ważne: Polacy kochają zupy, chleb, kanapki i mogą jeść obiady na
+              słodko i na słono.
+            </Box>
+          </Typography>
         </Grid>
+        <Grid item xs={5} justifyContent={{ xs: 'center', lg: 'right' }}>
+          <Image width="70%" src={gotuj} />
+        </Grid>
+      </Grid>
 
-        <Divider color="#fff"> </Divider>
-        <TaskAltIcon sx={{ marginTop: '20px', color: '#000' }}></TaskAltIcon>
+      <Divider color="#fff"> </Divider>
+      <TaskAltIcon sx={{ marginTop: '20px', color: '#000' }}></TaskAltIcon>
 
-        <Typography fontWeight="700" color="#000">
-          Proszę robić zadania i quizy - tu są interesujące informacje.
-        </Typography>
-        <Grid
-          container
-          spacing={2}
-          marginTop={5}
-          flexDirection={{ xs: 'column', lg: 'row' }}
-          paddingBottom="20px"
-        >
-          <Grid item xs={6}>
+      <Typography fontWeight="700" color="#000">
+        Proszę robić zadania i quizy - tu są interesujące informacje.
+      </Typography>
+      <Grid
+        container
+        spacing={2}
+        marginTop={5}
+        alignItems="center"
+        flexDirection={{ xs: 'column', lg: 'row' }}
+        paddingBottom="20px"
+      >
+        <Grid item xs={6}>
+          <Link href={linkzurek}>
+            <Box
+              component="img"
+              width={{ xs: '100%', lg: 500 }}
+              sx={{
+                height: 'auto',
+              }}
+              alt="Żurek."
+              src={Zurek}
+            />
+          </Link>
+          <Box sx={{ '& > :not(style)': { m: 1 } }}>
             <Link href={linkzurek}>
-              <Box
-                component="img"
-                sx={{
-                  height: 'auto',
-                  maxWidth: 500,
-                }}
-                alt="Żurek."
-                src={Zurek}
-              />
+              <Fab
+                variant="extended"
+                sx={{ marginTop: 1, backgroundColor: '#CBDFFA' }}
+              >
+                <PlayCircleIcon sx={{ mr: 1 }} />
+                Zagraj
+              </Fab>
             </Link>
-            <Box sx={{ '& > :not(style)': { m: 1 } }}>
-              <Link href={linkzurek}>
-                <Fab
-                  variant="extended"
-                  sx={{ marginTop: 1, backgroundColor: '#CBDFFA' }}
-                >
-                  <PlayCircleIcon sx={{ mr: 1 }} />
-                  Zagraj
-                </Fab>
-              </Link>
-            </Box>
-          </Grid>
-
-          <Grid item xs={6}>
-            <Link href={linkcoto}>
-              <Box
-                component="img"
-                sx={{
-                  height: 'auto',
-                  maxWidth: 500,
-                }}
-                alt="Co to?"
-                src={CoTo}
-              />
-            </Link>
-            <Box sx={{ '& > :not(style)': { m: 1 } }}>
-              <Link href={linkcoto}>
-                <Fab
-                  variant="extended"
-                  sx={{ marginTop: 1, backgroundColor: '#CBDFFA' }}
-                >
-                  <PlayCircleIcon sx={{ mr: 1 }} />
-                  Zagraj
-                </Fab>
-              </Link>
-            </Box>
-          </Grid>
-          <Grid item xs={6}>
-            <Link href={linkfalsz}>
-              <Box
-                component="img"
-                sx={{
-                  height: 'auto',
-                  maxWidth: 500,
-                }}
-                alt="falsz"
-                src={falsz}
-              />
-            </Link>
-            <Box sx={{ '& > :not(style)': { m: 1 } }}>
-              <Link href={linkfalsz}>
-                <Fab
-                  variant="extended"
-                  sx={{ marginTop: 1, backgroundColor: '#CBDFFA' }}
-                >
-                  <PlayCircleIcon sx={{ mr: 1 }} />
-                  Zagraj
-                </Fab>
-              </Link>
-            </Box>
-          </Grid>
-          <Grid item xs={6}>
-            <Link href={linkguess}>
-              <Box
-                component="img"
-                sx={{
-                  height: 'auto',
-                  maxWidth: 500,
-                }}
-                alt="guess"
-                src={guess}
-              />
-            </Link>
-            <Box sx={{ '& > :not(style)': { m: 1 } }}>
-              <Link href={linkguess}>
-                <Fab
-                  variant="extended"
-                  sx={{ marginTop: 1, backgroundColor: '#CBDFFA' }}
-                >
-                  <PlayCircleIcon sx={{ mr: 1 }} />
-                  Zagraj
-                </Fab>
-              </Link>
-            </Box>
-          </Grid>
+          </Box>
         </Grid>
-      </Box>
+
+        <Grid item xs={6}>
+          <Link href={linkcoto}>
+            <Box
+              component="img"
+              width={{ xs: '100%', lg: 500 }}
+              sx={{
+                height: 'auto',
+              }}
+              alt="Co to?"
+              src={CoTo}
+            />
+          </Link>
+          <Box sx={{ '& > :not(style)': { m: 1 } }}>
+            <Link href={linkcoto}>
+              <Fab
+                variant="extended"
+                sx={{ marginTop: 1, backgroundColor: '#CBDFFA' }}
+              >
+                <PlayCircleIcon sx={{ mr: 1 }} />
+                Zagraj
+              </Fab>
+            </Link>
+          </Box>
+        </Grid>
+        <Grid item xs={6}>
+          <Link href={linkfalsz}>
+            <Box
+              component="img"
+              width={{ xs: '100%', lg: 500 }}
+              sx={{
+                height: 'auto',
+              }}
+              alt="falsz"
+              src={falsz}
+            />
+          </Link>
+          <Box sx={{ '& > :not(style)': { m: 1 } }}>
+            <Link href={linkfalsz}>
+              <Fab
+                variant="extended"
+                sx={{ marginTop: 1, backgroundColor: '#CBDFFA' }}
+              >
+                <PlayCircleIcon sx={{ mr: 1 }} />
+                Zagraj
+              </Fab>
+            </Link>
+          </Box>
+        </Grid>
+        <Grid item xs={6}>
+          <Link href={linkguess}>
+            <Box
+              component="img"
+              width={{ xs: '100%', lg: 500 }}
+              sx={{
+                height: 'auto',
+              }}
+              alt="guess"
+              src={guess}
+            />
+          </Link>
+          <Box sx={{ '& > :not(style)': { m: 1 } }}>
+            <Link href={linkguess}>
+              <Fab
+                variant="extended"
+                sx={{ marginTop: 1, backgroundColor: '#CBDFFA' }}
+              >
+                <PlayCircleIcon sx={{ mr: 1 }} />
+                Zagraj
+              </Fab>
+            </Link>
+          </Box>
+        </Grid>
+      </Grid>
+      {/* </Box> */}
       <BottomAppBar></BottomAppBar>
     </>
   );

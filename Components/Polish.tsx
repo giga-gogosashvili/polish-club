@@ -1,9 +1,8 @@
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
-import Zurek from '../public/assets/Tasks/zurek.png';
-import CoTo from '../public/assets/Tasks/coto.png';
-import falsz from '../public/assets/Tasks/falsz.png';
-import guess from '../public/assets/Tasks/guess.png';
+import menu from '../public/assets/Tasks/menu.png';
+import niebieskiptak from '../public/assets/Tasks/niebieskiptak.png';
+import znani from '../public/assets/Tasks/znani.png';
 
 import polish from '../public/assets/polish.png';
 import { Typography } from '@mui/material';
@@ -17,14 +16,13 @@ import BottomAppBar from './BottomAppBar';
 import TaskAltIcon from '@mui/icons-material/TaskAlt';
 
 export default function Polish() {
-  const linkzurek =
-    'https://wordwall.net/pl/resource/30511797/polski-dla-cudzoziemc%c3%b3w/%c5%bcurek';
-  const linkcoto =
-    'https://wordwall.net/pl/resource/24429640/polski-dla-cudzoziemc%c3%b3w/kurpiowskie-jedzenie';
-  const linkfalsz =
-    'https://wordwall.net/pl/resource/34142936/polski-dla-cudzoziemc%c3%b3w/polska-kuchnia';
-  const linkguess =
-    'https://wordwall.net/pl/resource/74320304/polski-dla-cudzoziemc%c3%b3w/polska-kuchnia';
+  const linkznani =
+    'https://wordwall.net/pl/resource/33899302/polski-dla-cudzoziemc%c3%b3w/wyj%c4%85tkowe-kobiety';
+  const linkniebieskiptak =
+    'https://wordwall.net/pl/resource/23596073/polski-dla-cudzoziemc%c3%b3w/kolory-w-%c5%bcyciu-polak%c3%b3w';
+  const linkmenu =
+    'https://wordwall.net/pl/resource/65077371/polski-dla-cudzoziemc%c3%b3w/dialogi-pytania-i-odpowiedzi-kawiarnia';
+
   return (
     <>
       <Box sx={{ flexGrow: 1 }}>
@@ -82,7 +80,7 @@ export default function Polish() {
           paddingBottom="20px"
         >
           <Grid item xs={6}>
-            <Link href={linkzurek}>
+            <Link href={linkznani}>
               <Box
                 component="img"
                 sx={{
@@ -90,11 +88,11 @@ export default function Polish() {
                   maxWidth: 500,
                 }}
                 alt="Żurek."
-                src={Zurek}
+                src={znani}
               />
             </Link>
             <Box sx={{ '& > :not(style)': { m: 1 } }}>
-              <Link href={linkzurek}>
+              <Link href={linkznani}>
                 <Fab
                   variant="extended"
                   sx={{ marginTop: 1, backgroundColor: '#CBDFFA' }}
@@ -107,7 +105,7 @@ export default function Polish() {
           </Grid>
 
           <Grid item xs={6}>
-            <Link href={linkcoto}>
+            <Link href={linkniebieskiptak}>
               <Box
                 component="img"
                 sx={{
@@ -115,11 +113,11 @@ export default function Polish() {
                   maxWidth: 500,
                 }}
                 alt="Co to?"
-                src={CoTo}
+                src={niebieskiptak}
               />
             </Link>
             <Box sx={{ '& > :not(style)': { m: 1 } }}>
-              <Link href={linkcoto}>
+              <Link href={linkniebieskiptak}>
                 <Fab
                   variant="extended"
                   sx={{ marginTop: 1, backgroundColor: '#CBDFFA' }}
@@ -131,7 +129,7 @@ export default function Polish() {
             </Box>
           </Grid>
           <Grid item xs={6}>
-            <Link href={linkfalsz}>
+            <Link href={linkmenu}>
               <Box
                 component="img"
                 sx={{
@@ -139,11 +137,11 @@ export default function Polish() {
                   maxWidth: 500,
                 }}
                 alt="falsz"
-                src={falsz}
+                src={menu}
               />
             </Link>
             <Box sx={{ '& > :not(style)': { m: 1 } }}>
-              <Link href={linkfalsz}>
+              <Link href={linkmenu}>
                 <Fab
                   variant="extended"
                   sx={{ marginTop: 1, backgroundColor: '#CBDFFA' }}
@@ -154,7 +152,7 @@ export default function Polish() {
               </Link>
             </Box>
           </Grid>
-          <Grid item xs={6}>
+          {/* <Grid item xs={6}>
             <Link href={linkguess}>
               <Box
                 component="img"
@@ -177,7 +175,7 @@ export default function Polish() {
                 </Fab>
               </Link>
             </Box>
-          </Grid>
+          </Grid> */}
         </Grid>
       </Box>
       <BottomAppBar></BottomAppBar>
