@@ -1,15 +1,13 @@
 // import React from 'react';
 
 import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
-import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { useNavigate } from 'react-router-dom';
 import uczsie from '../public/assets/ucz_sie.jpg';
 
-export default function DiscoverCard() {
+export default function PolishCard() {
   const navigate = useNavigate();
 
   return (
@@ -22,7 +20,7 @@ export default function DiscoverCard() {
           component="div"
           onClick={() => {
             {
-              navigate('/main/uczsie');
+              navigate('/polish');
             }
           }}
         >
@@ -30,9 +28,12 @@ export default function DiscoverCard() {
         </Typography>
 
         <Typography variant="body2">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce posuere
-          non dolor nec facilisis. Suspendisse non commodo elit, non malesuada
-          orci. Integer scelerisque massa.
+          Język polski jest bardzo praktyczny, dobrze go znać! Jest też bardzo
+          interesujący i lekcje polskiego ze mną mogą być miłe i ciekawe.
+          {/* <Box>Polski jest naprawdę fantastyczny i magiczny.</Box> */}
+        </Typography>
+        <Typography variant="body2">
+          Polski jest naprawdę fantastyczny i magiczny.
         </Typography>
       </CardContent>
     </Card>

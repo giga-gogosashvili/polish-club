@@ -60,8 +60,26 @@ export default function TopAppBar() {
           >
             Kuchnia polska
           </Button>
-          <Button style={{ color: '#fff' }}>Polskie tradycje</Button>
-          <Button style={{ color: '#fff' }}>Polskie miasta</Button>
+          <Button
+            style={{ color: '#fff' }}
+            onClick={() => {
+              {
+                navigate('/traditions');
+              }
+            }}
+          >
+            Polskie tradycje
+          </Button>
+          <Button
+            style={{ color: '#fff' }}
+            onClick={() => {
+              {
+                navigate('/cities');
+              }
+            }}
+          >
+            Polskie miasta
+          </Button>
           {/* <Button color="inherit">Studenci polecają</Button> */}
         </Toolbar>
       </AppBar>

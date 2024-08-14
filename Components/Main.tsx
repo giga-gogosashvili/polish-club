@@ -3,7 +3,7 @@ import Box from '@mui/material/Box';
 import MagdaCard from './MagdaCard';
 import GeneralCard from './GeneralCard';
 import BottomAppBar from './BottomAppBar';
-import UczSieCard from './UczSieCard';
+import PolishCard from './PolishCard';
 import { Grid } from '@mui/material';
 
 export default function Main() {
@@ -22,7 +22,7 @@ export default function Main() {
           marginBottom="40px"
         >
           <MagdaCard />
-          <UczSieCard />
+          <PolishCard />
         </Grid>
         <BottomAppBar />
       </Box>
