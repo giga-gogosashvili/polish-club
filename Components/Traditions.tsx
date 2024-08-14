@@ -1,7 +1,5 @@
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
-import falsz from '../public/assets/Tasks/falsz.png';
-import guess from '../public/assets/Tasks/guess.png';
 import podlazniczka from '../public/assets/Tasks/podlazniczka.png';
 import paczek from '../public/assets/Tasks/paczek.png';
 import pasztet from '../public/assets/Tasks/pasztet.png';
@@ -24,8 +22,7 @@ export default function Traditions() {
     'https://wordwall.net/pl/resource/67976575/polski-dla-cudzoziemc%c3%b3w/t%c5%82usty-czwartek';
   const linkpasztet =
     'https://wordwall.net/pl/resource/31281063/polski-dla-cudzoziemc%c3%b3w/wielkanocny-koszyczek';
-  const linkguess =
-    'https://wordwall.net/pl/resource/74320304/polski-dla-cudzoziemc%c3%b3w/polska-kuchnia';
+
   return (
     <>
       <Box sx={{ flexGrow: 1 }}>

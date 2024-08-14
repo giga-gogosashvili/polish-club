@@ -1,9 +1,7 @@
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
-import Zurek from '../public/assets/Tasks/zurek.png';
-import CoTo from '../public/assets/Tasks/coto.png';
-import falsz from '../public/assets/Tasks/falsz.png';
-import guess from '../public/assets/Tasks/guess.png';
+import symbole from '../public/assets/Tasks/symbole.png';
+import malediwy from '../public/assets/Tasks/malediwy.png';
 
 import cities from '../public/assets/cities.png';
 import { Typography } from '@mui/material';
@@ -17,14 +15,11 @@ import BottomAppBar from './BottomAppBar';
 import TaskAltIcon from '@mui/icons-material/TaskAlt';
 
 export default function Cities() {
-  const linkzurek =
-    'https://wordwall.net/pl/resource/30511797/polski-dla-cudzoziemc%c3%b3w/%c5%bcurek';
-  const linkcoto =
-    'https://wordwall.net/pl/resource/24429640/polski-dla-cudzoziemc%c3%b3w/kurpiowskie-jedzenie';
-  const linkfalsz =
-    'https://wordwall.net/pl/resource/34142936/polski-dla-cudzoziemc%c3%b3w/polska-kuchnia';
-  const linkguess =
-    'https://wordwall.net/pl/resource/74320304/polski-dla-cudzoziemc%c3%b3w/polska-kuchnia';
+  const linksymbole =
+    'https://wordwall.net/pl/resource/71118926/polski-dla-cudzoziemc%c3%b3w/miasta-symbole';
+  const linkmalediwy =
+    'https://wordwall.net/pl/resource/34142880/polski-dla-cudzoziemc%c3%b3w/polska';
+
   return (
     <>
       <Box sx={{ flexGrow: 1 }}>
@@ -82,7 +77,7 @@ export default function Cities() {
           paddingBottom="20px"
         >
           <Grid item xs={6}>
-            <Link href={linkzurek}>
+            <Link href={linksymbole}>
               <Box
                 component="img"
                 sx={{
@@ -90,11 +85,11 @@ export default function Cities() {
                   maxWidth: 500,
                 }}
                 alt="Żurek."
-                src={Zurek}
+                src={symbole}
               />
             </Link>
             <Box sx={{ '& > :not(style)': { m: 1 } }}>
-              <Link href={linkzurek}>
+              <Link href={linksymbole}>
                 <Fab
                   variant="extended"
                   sx={{ marginTop: 1, backgroundColor: '#CBDFFA' }}
@@ -107,7 +102,7 @@ export default function Cities() {
           </Grid>
 
           <Grid item xs={6}>
-            <Link href={linkcoto}>
+            <Link href={linkmalediwy}>
               <Box
                 component="img"
                 sx={{
@@ -115,11 +110,11 @@ export default function Cities() {
                   maxWidth: 500,
                 }}
                 alt="Co to?"
-                src={CoTo}
+                src={malediwy}
               />
             </Link>
             <Box sx={{ '& > :not(style)': { m: 1 } }}>
-              <Link href={linkcoto}>
+              <Link href={linkmalediwy}>
                 <Fab
                   variant="extended"
                   sx={{ marginTop: 1, backgroundColor: '#CBDFFA' }}
@@ -130,7 +125,7 @@ export default function Cities() {
               </Link>
             </Box>
           </Grid>
-          <Grid item xs={6}>
+          {/* <Grid item xs={6}>
             <Link href={linkfalsz}>
               <Box
                 component="img"
@@ -177,7 +172,7 @@ export default function Cities() {
                 </Fab>
               </Link>
             </Box>
-          </Grid>
+          </Grid> */}
         </Grid>
       </Box>
       <BottomAppBar></BottomAppBar>
