@@ -31,21 +31,17 @@ export default function Cuisine() {
         <GoBack></GoBack>
         <Grid
           container
-          // alignItems={{ xs: 'center', lg: 'normal' }}
           direction={{ xs: 'column', lg: 'row' }}
-          // alignItems="center"
           justifyContent="center"
           spacing={2}
           marginBottom={10}
           marginTop={{ xs: '40px', lg: '0px' }}
-          // flexDirection={{ xs: 'column', lg: 'row' }}
         >
           <Grid
             item
             xs={7}
             container
-            // alignItems={{ xs: 'center', lg: 'normal' }}
-            // direction="row"
+            direction="row"
             justifyContent="center"
             alignItems="center"
           >
@@ -54,7 +50,7 @@ export default function Cuisine() {
               sx={{
                 backgroundColor: '#2F4A8C',
                 width: '100%',
-                height: '100%',
+                height: '20%',
                 alignContent: 'center',
               }}
             >

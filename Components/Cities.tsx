@@ -22,13 +22,15 @@ export default function Cities() {
 
   return (
     <>
-      <Box sx={{ flexGrow: 1 }}>
+      <Box sx={{ flexGrow: 1 }} alignItems="center">
         <GoBack></GoBack>
         <Grid
           container
+          direction={{ xs: 'column', lg: 'row' }}
+          justifyContent="center"
           spacing={2}
           marginBottom={10}
-          flexDirection={{ xs: 'column', lg: 'row' }}
+          marginTop={{ xs: '40px', lg: '0px' }}
         >
           <Grid
             item
@@ -39,6 +41,7 @@ export default function Cities() {
             alignItems="center"
           >
             <Box
+              marginBottom={{ xs: '20px', lg: '0px' }}
               sx={{
                 backgroundColor: '#2F4A8C',
                 width: '100%',
@@ -59,7 +62,7 @@ export default function Cities() {
             </Typography>
           </Grid>
           <Grid item xs={5}>
-            <Image width={400} src={cities} />
+            <Image width="100%" src={cities} />
           </Grid>
         </Grid>
 
@@ -73,6 +76,7 @@ export default function Cities() {
           container
           spacing={2}
           marginTop={5}
+          alignItems="center"
           flexDirection={{ xs: 'column', lg: 'row' }}
           paddingBottom="20px"
         >
@@ -80,11 +84,11 @@ export default function Cities() {
             <Link href={linksymbole}>
               <Box
                 component="img"
+                width={{ xs: '100%', lg: 500 }}
                 sx={{
                   height: 'auto',
-                  maxWidth: 500,
                 }}
-                alt="Żurek."
+                alt="Symbole."
                 src={symbole}
               />
             </Link>
@@ -105,11 +109,11 @@ export default function Cities() {
             <Link href={linkmalediwy}>
               <Box
                 component="img"
+                width={{ xs: '100%', lg: 500 }}
                 sx={{
                   height: 'auto',
-                  maxWidth: 500,
                 }}
-                alt="Co to?"
+                alt="Malediwy"
                 src={malediwy}
               />
             </Link>
