@@ -25,13 +25,15 @@ export default function Traditions() {
 
   return (
     <>
-      <Box sx={{ flexGrow: 1 }}>
+      <Box sx={{ flexGrow: 1 }} alignItems="center">
         <GoBack></GoBack>
         <Grid
           container
+          direction={{ xs: 'column', lg: 'row' }}
+          justifyContent="center"
           spacing={2}
           marginBottom={10}
-          flexDirection={{ xs: 'column', lg: 'row' }}
+          marginTop={{ xs: '40px', lg: '0px' }}
         >
           <Grid
             item
@@ -42,6 +44,7 @@ export default function Traditions() {
             alignItems="center"
           >
             <Box
+              marginBottom={{ xs: '20px', lg: '0px' }}
               sx={{
                 backgroundColor: '#2F4A8C',
                 width: '100%',
@@ -60,8 +63,8 @@ export default function Traditions() {
               jakiś specjalny dzień lub dni.
             </Typography>
           </Grid>
-          <Grid item xs={5}>
-            <Image width={400} src={traditions} />
+          <Grid item xs={5} justifyContent="center">
+            <Image width="100%" src={traditions} />
           </Grid>
         </Grid>
 
@@ -75,6 +78,7 @@ export default function Traditions() {
           container
           spacing={2}
           marginTop={5}
+          alignItems="center"
           flexDirection={{ xs: 'column', lg: 'row' }}
           paddingBottom="20px"
         >
@@ -82,9 +86,9 @@ export default function Traditions() {
             <Link href={linkpodlazniczka}>
               <Box
                 component="img"
+                width={{ xs: '100%', lg: 500 }}
                 sx={{
                   height: 'auto',
-                  maxWidth: 500,
                 }}
                 alt="Żurek."
                 src={podlazniczka}
@@ -107,9 +111,9 @@ export default function Traditions() {
             <Link href={linkpaczek}>
               <Box
                 component="img"
+                width={{ xs: '100%', lg: 500 }}
                 sx={{
                   height: 'auto',
-                  maxWidth: 500,
                 }}
                 alt="Co to?"
                 src={paczek}
@@ -131,9 +135,9 @@ export default function Traditions() {
             <Link href={linkpasztet}>
               <Box
                 component="img"
+                width={{ xs: '100%', lg: 500 }}
                 sx={{
                   height: 'auto',
-                  maxWidth: 500,
                 }}
                 alt="falsz"
                 src={pasztet}
