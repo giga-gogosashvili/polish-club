@@ -93,24 +93,14 @@ export default function Magda() {
               </Typography>
 
               <Stack direction="row" gap={2} alignItems="left">
-                <Icon
-                  color="#000"
-                  path={mdiCalendarCheck}
-                  size={1}
-                  align="left"
-                />
+                <Icon color="#000" path={mdiCalendarCheck} size={1} />
                 <Typography variant="body1" color="#000" align="left">
                   organizatorka wydarzeń kulturalnych i językowych
                 </Typography>
               </Stack>
 
               <Stack direction="row" gap={2} alignItems="left">
-                <Icon
-                  color="#000"
-                  path={mdiAccountTieWoman}
-                  size={1}
-                  align="left"
-                />
+                <Icon color="#000" path={mdiAccountTieWoman} size={1} />
                 <Typography variant="body1" color="#000" align="left">
                   przewodnicząca egzaminów certyfikatowych z języka polskiego
                   jako obcego
@@ -131,18 +121,13 @@ export default function Magda() {
 
               <Stack direction="row" gap={2} alignItems="left">
                 <Icon color="#000" path={mdiEyeCheck} size={1} align="left" />
-                <Typography variant="body1" color="#000" align="left">
+                <Typography variant="body1" color="#000">
                   egzaminatorka TELC
                 </Typography>
               </Stack>
 
               <Stack direction="row" gap={2} alignItems="left">
-                <Icon
-                  color="#000"
-                  path={mdiSchoolOutline}
-                  size={1}
-                  align="left"
-                />
+                <Icon color="#000" path={mdiSchoolOutline} size={1} />
                 <Typography variant="body1" color="#000" align="left">
                   laureatka plebiscytu Absolwent z Pasją, nagród rektora
                   Uniwersytetu Śląskiego
@@ -150,13 +135,8 @@ export default function Magda() {
               </Stack>
 
               <Stack direction="row" gap={2} alignItems="left">
-                <Icon
-                  color="#000"
-                  path={mdiMedalOutline}
-                  size={1}
-                  align="left"
-                />
-                <Typography variant="body1" color="#000" align="left">
+                <Icon color="#000" path={mdiMedalOutline} size={1} />
+                <Typography variant="body1" color="#000">
                   złota odznaka UŚ
                 </Typography>
               </Stack>
