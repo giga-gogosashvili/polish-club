@@ -3,6 +3,7 @@ import Grid from '@mui/material/Grid';
 import podlazniczka from '../public/assets/Tasks/podlazniczka.png';
 import paczek from '../public/assets/Tasks/paczek.png';
 import pasztet from '../public/assets/Tasks/pasztet.png';
+import wielkanoc from '../public/assets/Tasks/wielkanoc.png';
 
 import traditions from '../public/assets/traditions.png';
 import { Typography } from '@mui/material';
@@ -22,6 +23,8 @@ export default function Traditions() {
     'https://wordwall.net/pl/resource/67976575/polski-dla-cudzoziemc%c3%b3w/t%c5%82usty-czwartek';
   const linkpasztet =
     'https://wordwall.net/pl/resource/31281063/polski-dla-cudzoziemc%c3%b3w/wielkanocny-koszyczek';
+  const linkwielkanoc =
+    'https://wordwall.net/pl/resource/13731167/polski-dla-cudzoziemc%c3%b3w/bohaterowie-%c5%9bniadania-wielkanocnego';
 
   return (
     <>
@@ -155,20 +158,20 @@ export default function Traditions() {
               </Link>
             </Box>
           </Grid>
-          {/* <Grid item xs={6}>
-            <Link href={linkguess}>
+          <Grid item xs={6}>
+            <Link href={linkwielkanoc}>
               <Box
                 component="img"
+                width={{ xs: '100%', lg: 500 }}
                 sx={{
                   height: 'auto',
-                  maxWidth: 500,
                 }}
-                alt="guess"
-                src={guess}
+                alt="falsz"
+                src={wielkanoc}
               />
             </Link>
             <Box sx={{ '& > :not(style)': { m: 1 } }}>
-              <Link href={linkguess}>
+              <Link href={linkwielkanoc}>
                 <Fab
                   variant="extended"
                   sx={{ marginTop: 1, backgroundColor: '#CBDFFA' }}
@@ -178,7 +181,7 @@ export default function Traditions() {
                 </Fab>
               </Link>
             </Box>
-          </Grid> */}
+          </Grid>
         </Grid>
       </Box>
       <BottomAppBar></BottomAppBar>

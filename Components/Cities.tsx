@@ -2,6 +2,8 @@ import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import symbole from '../public/assets/Tasks/symbole.png';
 import malediwy from '../public/assets/Tasks/malediwy.png';
+import pieknypolska from '../public/assets/Tasks/pieknypolska.png';
+import jedzeniezregionow from '../public/assets/Tasks/jedzeniezregionow.png';
 
 import cities from '../public/assets/cities.png';
 import { Typography } from '@mui/material';
@@ -19,6 +21,10 @@ export default function Cities() {
     'https://wordwall.net/pl/resource/71118926/polski-dla-cudzoziemc%c3%b3w/miasta-symbole';
   const linkmalediwy =
     'https://wordwall.net/pl/resource/34142880/polski-dla-cudzoziemc%c3%b3w/polska';
+  const linkpieknypolska =
+    'https://wordwall.net/pl/resource/72637862/polski-dla-cudzoziemc%c3%b3w/polska';
+  const linkjedzeniezregionow =
+    'https://wordwall.net/pl/resource/73376600/polski-dla-cudzoziemc%c3%b3w/polskie-produkty';
 
   return (
     <>
@@ -129,20 +135,21 @@ export default function Cities() {
               </Link>
             </Box>
           </Grid>
-          {/* <Grid item xs={6}>
-            <Link href={linkfalsz}>
+
+          <Grid item xs={6}>
+            <Link href={linkpieknypolska}>
               <Box
                 component="img"
+                width={{ xs: '100%', lg: 500 }}
                 sx={{
                   height: 'auto',
-                  maxWidth: 500,
                 }}
-                alt="falsz"
-                src={falsz}
+                alt="Malediwy"
+                src={pieknypolska}
               />
             </Link>
             <Box sx={{ '& > :not(style)': { m: 1 } }}>
-              <Link href={linkfalsz}>
+              <Link href={linkpieknypolska}>
                 <Fab
                   variant="extended"
                   sx={{ marginTop: 1, backgroundColor: '#CBDFFA' }}
@@ -154,19 +161,19 @@ export default function Cities() {
             </Box>
           </Grid>
           <Grid item xs={6}>
-            <Link href={linkguess}>
+            <Link href={linkjedzeniezregionow}>
               <Box
                 component="img"
+                width={{ xs: '100%', lg: 500 }}
                 sx={{
                   height: 'auto',
-                  maxWidth: 500,
                 }}
-                alt="guess"
-                src={guess}
+                alt="Malediwy"
+                src={jedzeniezregionow}
               />
             </Link>
             <Box sx={{ '& > :not(style)': { m: 1 } }}>
-              <Link href={linkguess}>
+              <Link href={linkjedzeniezregionow}>
                 <Fab
                   variant="extended"
                   sx={{ marginTop: 1, backgroundColor: '#CBDFFA' }}
@@ -176,7 +183,7 @@ export default function Cities() {
                 </Fab>
               </Link>
             </Box>
-          </Grid> */}
+          </Grid>
         </Grid>
       </Box>
       <BottomAppBar></BottomAppBar>

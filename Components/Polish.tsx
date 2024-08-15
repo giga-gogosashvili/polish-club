@@ -3,6 +3,7 @@ import Grid from '@mui/material/Grid';
 import menu from '../public/assets/Tasks/menu.png';
 import niebieskiptak from '../public/assets/Tasks/niebieskiptak.png';
 import znani from '../public/assets/Tasks/znani.png';
+import serwisy from '../public/assets/Tasks/serwisy.png';
 
 import polish from '../public/assets/polish.png';
 import { Typography } from '@mui/material';
@@ -22,6 +23,8 @@ export default function Polish() {
     'https://wordwall.net/pl/resource/23596073/polski-dla-cudzoziemc%c3%b3w/kolory-w-%c5%bcyciu-polak%c3%b3w';
   const linkmenu =
     'https://wordwall.net/pl/resource/65077371/polski-dla-cudzoziemc%c3%b3w/dialogi-pytania-i-odpowiedzi-kawiarnia';
+  const linkserwisy =
+    'https://wordwall.net/pl/resource/75115556/polski-dla-cudzoziemc%c3%b3w/serwisy-i-us%c5%82ugi';
 
   return (
     <>
@@ -156,20 +159,20 @@ export default function Polish() {
               </Link>
             </Box>
           </Grid>
-          {/* <Grid item xs={6}>
-            <Link href={linkguess}>
+          <Grid item xs={6}>
+            <Link href={linkserwisy}>
               <Box
                 component="img"
+                width={{ xs: '100%', lg: 500 }}
                 sx={{
                   height: 'auto',
-                  maxWidth: 500,
                 }}
-                alt="guess"
-                src={guess}
+                alt="falsz"
+                src={serwisy}
               />
             </Link>
             <Box sx={{ '& > :not(style)': { m: 1 } }}>
-              <Link href={linkguess}>
+              <Link href={linkserwisy}>
                 <Fab
                   variant="extended"
                   sx={{ marginTop: 1, backgroundColor: '#CBDFFA' }}
@@ -179,7 +182,7 @@ export default function Polish() {
                 </Fab>
               </Link>
             </Box>
-          </Grid> */}
+          </Grid>
         </Grid>
       </Box>
       <BottomAppBar></BottomAppBar>
