@@ -15,13 +15,15 @@ import ListItemText from '@mui/material/ListItemText';
 export default function Magda() {
   return (
     <>
-      <Box sx={{ flexGrow: 1 }}>
+      <Box sx={{ flexGrow: 1 }} alignItems="center">
         <GoBack></GoBack>
         <Grid
           container
+          direction={{ xs: 'column', lg: 'row' }}
+          justifyContent="center"
           spacing={2}
           marginBottom={10}
-          flexDirection={{ xs: 'column', lg: 'row' }}
+          marginTop={{ xs: '40px', lg: '0px' }}
         >
           <Grid
             item
@@ -32,6 +34,7 @@ export default function Magda() {
             alignItems="center"
           >
             <Box
+              marginBottom={{ xs: '20px', lg: '0px' }}
               sx={{
                 backgroundColor: '#2F4A8C',
                 width: '100%',
@@ -70,7 +73,7 @@ export default function Magda() {
                   </Box>
                   <Box color="#000">- egzaminatorka TELC</Box>
                   <Box color="#000">
-                    - laureatka plebiscytu Absolwent z Pasją, nagród rektora UŚ,
+                    - laureatka plebiscytu Absolwent z Pasją, nagród rektora UŚ
                   </Box>
                   <Box color="#000">- złota odznaka UŚ</Box>
                 </ListItemText>
@@ -84,8 +87,8 @@ export default function Magda() {
               </Link>
             </Typography>
           </Grid>
-          <Grid item xs={5}>
-            <Image width={400} src={magdaphoto} />
+          <Grid item xs={5} justifyContent="center">
+            <Image width="100%" src={magdaphoto} />
           </Grid>
         </Grid>
       </Box>
