@@ -25,13 +25,15 @@ export default function Polish() {
 
   return (
     <>
-      <Box sx={{ flexGrow: 1 }}>
+      <Box sx={{ flexGrow: 1 }} alignItems="center">
         <GoBack></GoBack>
         <Grid
           container
+          direction={{ xs: 'column', lg: 'row' }}
+          justifyContent="center"
           spacing={2}
           marginBottom={10}
-          flexDirection={{ xs: 'column', lg: 'row' }}
+          marginTop={{ xs: '40px', lg: '0px' }}
         >
           <Grid
             item
@@ -42,6 +44,7 @@ export default function Polish() {
             alignItems="center"
           >
             <Box
+              marginBottom={{ xs: '20px', lg: '0px' }}
               sx={{
                 backgroundColor: '#2F4A8C',
                 width: '100%',
@@ -61,8 +64,8 @@ export default function Polish() {
               <Box>Polski jest naprawdę fantastyczny i magiczny.</Box>
             </Typography>
           </Grid>
-          <Grid item xs={5}>
-            <Image width={400} src={polish} />
+          <Grid item xs={5} justifyContent="center">
+            <Image width="100%" src={polish} />
           </Grid>
         </Grid>
 
@@ -76,6 +79,7 @@ export default function Polish() {
           container
           spacing={2}
           marginTop={5}
+          alignItems="center"
           flexDirection={{ xs: 'column', lg: 'row' }}
           paddingBottom="20px"
         >
@@ -83,9 +87,9 @@ export default function Polish() {
             <Link href={linkznani}>
               <Box
                 component="img"
+                width={{ xs: '100%', lg: 500 }}
                 sx={{
                   height: 'auto',
-                  maxWidth: 500,
                 }}
                 alt="Żurek."
                 src={znani}
@@ -108,9 +112,9 @@ export default function Polish() {
             <Link href={linkniebieskiptak}>
               <Box
                 component="img"
+                width={{ xs: '100%', lg: 500 }}
                 sx={{
                   height: 'auto',
-                  maxWidth: 500,
                 }}
                 alt="Co to?"
                 src={niebieskiptak}
@@ -132,9 +136,9 @@ export default function Polish() {
             <Link href={linkmenu}>
               <Box
                 component="img"
+                width={{ xs: '100%', lg: 500 }}
                 sx={{
                   height: 'auto',
-                  maxWidth: 500,
                 }}
                 alt="falsz"
                 src={menu}
