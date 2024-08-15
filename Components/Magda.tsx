@@ -137,7 +137,7 @@ export default function Magda() {
                 </Typography>
               </Stack>
             </Box>
-            <Typography color="#000" marginTop="20px">
+            <Typography color="#000" marginTop="20px" variant="h6">
               Interesujące informacje o mnie są w{' '}
               <Link href="https://wordwall.net/pl/resource/75401459/polski-dla-cudzoziemc%c3%b3w/magdalena-knapik-poznaj-mnie">
                 quizie
@@ -149,6 +149,11 @@ export default function Magda() {
           </Grid>
         </Grid>
       </Box>
+      <Typography color="#000" marginBottom="10px">
+        Strona powstała przy wsparciu NAWA. Dowiedz się więcej o tej
+        organizacji, grając{' '}
+        <Link href="https://wordwall.net/pl/resource/75401218">tutaj</Link>.
+      </Typography>
 
       <BottomAppBar></BottomAppBar>
     </>
