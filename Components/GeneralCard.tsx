@@ -16,12 +16,13 @@ export default function GeneralCard() {
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          Polski jest fantastyczny
+          Polski jest fantastyczny, Polska jest magiczna
         </Typography>
         <Typography variant="body2">
-          Język polski jest bardzo praktyczny, dobrze go znać! Jest też bardzo
-          interesujący i lekcje polskiego ze mną mogą być miłe i ciekawe. Polski
-          jest naprawdę fantastyczny i magiczny.
+          Ucz się na każdym poziomie: A1, A2, B1, B2, C1, C2. Przygotuj się ze
+          mną do egzaminu z języka polskiego – certyfikatowego, TELC, w ramach
+          rekrutacji na różne programy Kirklanda, NAWA, studia w Polsce. Ucz się
+          ze mną polskiej kultury i tradycji. Poznaj ciekawostki o Polsce.
         </Typography>
       </CardContent>
     </Card>
