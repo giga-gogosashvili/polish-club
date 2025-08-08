@@ -9,7 +9,7 @@ import { Grid } from '@mui/material';
 export default function Main() {
   return (
     <>
-      <Box flexDirection="row" boxShadow="none">
+      <Box flexDirection="row" boxShadow="none" width="100%">
         <TopAppBar></TopAppBar>
         <GeneralCard />
         <Grid

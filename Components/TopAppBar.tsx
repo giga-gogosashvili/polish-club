@@ -10,15 +10,26 @@ export default function TopAppBar() {
   const navigate = useNavigate();
 
   return (
-    <Box sx={{ flexGrow: 1, width: '100%', boxShadow: 'none' }}>
+    <Box
+      sx={{
+        flexGrow: 1,
+        width: '100%',
+        boxShadow: 'none',
+      }}
+    >
       {/* <CssBaseline /> */}
 
       <AppBar
         position="static"
         style={{
           width: '100%',
-          backgroundColor: 'transparent',
+          // backgroundColor: 'transparent',
+          // backgroundColor: 'yellow',
+
           boxShadow: 'none',
+          // maxWidth: '100%',
+          // left: '0px',
+          // right: '0px',
         }}
       >
         <Box marginBottom="20px">
@@ -42,8 +53,11 @@ export default function TopAppBar() {
             //   color: 'grey.100',
             //   typography: 'body1',
             // },
+            width: '100%',
             justifyContent: 'space-between',
-            backgroundColor: '#2F4A8C',
+            // backgroundColor: '#2F4A8C',
+            backgroundColor: 'yellow',
+
             // maxWidth: '500px',
           }}
           // alignItems="center"
