@@ -23,7 +23,8 @@ export default function TopAppBar() {
         position="static"
         style={{
           width: '100%',
-          // backgroundColor: 'transparent',
+          backgroundColor: 'transparent',
+          // backgroundColor: 'yellow',
 
           boxShadow: 'none',
           // maxWidth: '100%',
@@ -63,7 +64,7 @@ export default function TopAppBar() {
         >
           {/* <Button color="inherit">Polska magia</Button> */}
           <Button
-            style={{ color: '#fff' }}
+            style={{ color: '#2F4A8C' }}
             onClick={() => {
               {
                 navigate('/cuisine');
@@ -73,7 +74,7 @@ export default function TopAppBar() {
             Kuchnia polska
           </Button>
           <Button
-            style={{ color: '#fff' }}
+            style={{ color: '#2F4A8C' }}
             onClick={() => {
               {
                 navigate('/traditions');
@@ -83,7 +84,7 @@ export default function TopAppBar() {
             Polskie tradycje
           </Button>
           <Button
-            style={{ color: '#fff' }}
+            style={{ color: '#2F4A8C' }}
             onClick={() => {
               {
                 navigate('/cities');
