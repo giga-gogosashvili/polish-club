@@ -23,6 +23,14 @@ export default function PolishCard() {
               navigate('/polish');
             }
           }}
+          sx={{
+            // color: 'text.primary',
+            transition: 'color 0.3s ease',
+            '&:hover': {
+              color: 'primary.main',
+              cursor: 'pointer',
+            },
+          }}
         >
           Ucz się języka polskiego
         </Typography>

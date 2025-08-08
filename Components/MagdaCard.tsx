@@ -26,6 +26,14 @@ export default function MagdaCard() {
               navigate('/magda');
             }
           }}
+          sx={{
+            // color: 'text.primary',
+            transition: 'color 0.3s ease',
+            '&:hover': {
+              color: 'primary.main',
+              cursor: 'pointer',
+            },
+          }}
         >
           Magdalena Knapik
         </Typography>
