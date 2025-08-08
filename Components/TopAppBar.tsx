@@ -23,8 +23,7 @@ export default function TopAppBar() {
         position="static"
         style={{
           width: '100%',
-          // backgroundColor: 'transparent',
-          // backgroundColor: 'yellow',
+          backgroundColor: 'transparent',
 
           boxShadow: 'none',
           // maxWidth: '100%',
