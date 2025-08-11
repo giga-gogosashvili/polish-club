@@ -4,6 +4,11 @@ import Zurek from '../public/assets/Tasks/zurek.png';
 import CoTo from '../public/assets/Tasks/coto.png';
 import falsz from '../public/assets/Tasks/falsz.png';
 import guess from '../public/assets/Tasks/guess.png';
+//new tasks
+import grillmajowka from '../public/assets/Tasks/grillmajowka.png';
+import kurpiowskie from '../public/assets/Tasks/kurpiowskie.png';
+import awkuchni from '../public/assets/Tasks/awkuchni.png';
+import grill from '../public/assets/Tasks/grill.png';
 
 import gotuj from '../public/assets/gotuj.png';
 import { Typography } from '@mui/material';
@@ -25,6 +30,12 @@ export default function Cuisine() {
     'https://wordwall.net/pl/resource/34142936/polski-dla-cudzoziemc%c3%b3w/polska-kuchnia';
   const linkguess =
     'https://wordwall.net/pl/resource/74320304/polski-dla-cudzoziemc%c3%b3w/polska-kuchnia';
+
+  //nnew tasks
+  const linkgrillmajowka = 'https://wordwall.net/pl/resource/91407097';
+  const linkkurpiowskie = 'https://wordwall.net/pl/resource/24429640';
+  const linkawkuchni = 'https://wordwall.net/pl/resource/76354504';
+  const linkgrill = 'https://wordwall.net/pl/resource/72650305';
   return (
     <>
       <Box sx={{ flexGrow: 1 }} alignItems="center">
@@ -75,10 +86,8 @@ export default function Cuisine() {
             <Image width="100%" src={gotuj} />
           </Grid>
         </Grid>
-
         <Divider color="#fff"> </Divider>
         <TaskAltIcon sx={{ marginTop: '20px', color: '#000' }}></TaskAltIcon>
-
         <Typography fontWeight="700" color="#000">
           Proszę robić zadania i quizy - tu są interesujące informacje.
         </Typography>
@@ -114,7 +123,6 @@ export default function Cuisine() {
               </Link>
             </Box>
           </Grid>
-
           <Grid item xs={6}>
             <Link href={linkcoto}>
               <Box
@@ -177,6 +185,102 @@ export default function Cuisine() {
             </Link>
             <Box sx={{ '& > :not(style)': { m: 1 } }}>
               <Link href={linkguess}>
+                <Fab
+                  variant="extended"
+                  sx={{ marginTop: 1, backgroundColor: '#CBDFFA' }}
+                >
+                  <PlayCircleIcon sx={{ mr: 1 }} />
+                  Zagraj
+                </Fab>
+              </Link>
+            </Box>
+          </Grid>
+          <Grid item xs={6}>
+            <Link href={linkgrillmajowka}>
+              <Box
+                component="img"
+                width={{ xs: '100%', lg: 500 }}
+                sx={{
+                  height: 'auto',
+                }}
+                alt="GrillMajowka."
+                src={grillmajowka}
+              />
+            </Link>
+            <Box sx={{ '& > :not(style)': { m: 1 } }}>
+              <Link href={linkgrillmajowka}>
+                <Fab
+                  variant="extended"
+                  sx={{ marginTop: 1, backgroundColor: '#CBDFFA' }}
+                >
+                  <PlayCircleIcon sx={{ mr: 1 }} />
+                  Zagraj
+                </Fab>
+              </Link>
+            </Box>
+          </Grid>
+          <Grid item xs={6}>
+            <Link href={linkkurpiowskie}>
+              <Box
+                component="img"
+                width={{ xs: '100%', lg: 500 }}
+                sx={{
+                  height: 'auto',
+                }}
+                alt="kurpiowskie."
+                src={kurpiowskie}
+              />
+            </Link>
+            <Box sx={{ '& > :not(style)': { m: 1 } }}>
+              <Link href={linkkurpiowskie}>
+                <Fab
+                  variant="extended"
+                  sx={{ marginTop: 1, backgroundColor: '#CBDFFA' }}
+                >
+                  <PlayCircleIcon sx={{ mr: 1 }} />
+                  Zagraj
+                </Fab>
+              </Link>
+            </Box>
+          </Grid>
+          <Grid item xs={6}>
+            <Link href={linkawkuchni}>
+              <Box
+                component="img"
+                width={{ xs: '100%', lg: 500 }}
+                sx={{
+                  height: 'auto',
+                }}
+                alt="awkuchni."
+                src={awkuchni}
+              />
+            </Link>
+            <Box sx={{ '& > :not(style)': { m: 1 } }}>
+              <Link href={linkawkuchni}>
+                <Fab
+                  variant="extended"
+                  sx={{ marginTop: 1, backgroundColor: '#CBDFFA' }}
+                >
+                  <PlayCircleIcon sx={{ mr: 1 }} />
+                  Zagraj
+                </Fab>
+              </Link>
+            </Box>
+          </Grid>
+          <Grid item xs={6}>
+            <Link href={linkgrill}>
+              <Box
+                component="img"
+                width={{ xs: '100%', lg: 500 }}
+                sx={{
+                  height: 'auto',
+                }}
+                alt="grill"
+                src={grill}
+              />
+            </Link>
+            <Box sx={{ '& > :not(style)': { m: 1 } }}>
+              <Link href={linkgrill}>
                 <Fab
                   variant="extended"
                   sx={{ marginTop: 1, backgroundColor: '#CBDFFA' }}
