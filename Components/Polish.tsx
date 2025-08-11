@@ -4,6 +4,11 @@ import menu from '../public/assets/Tasks/menu.png';
 import niebieskiptak from '../public/assets/Tasks/niebieskiptak.png';
 import znani from '../public/assets/Tasks/znani.png';
 import serwisy from '../public/assets/Tasks/serwisy.png';
+//
+import poczta from '../public/assets/Tasks/poczta.png';
+import poczta_kurier from '../public/assets/Tasks/poczta_kurier.png';
+import pogoda from '../public/assets/Tasks/pogoda.png';
+import poryroku from '../public/assets/Tasks/poryroku.png';
 
 import polish from '../public/assets/polish.png';
 import { Typography } from '@mui/material';
@@ -25,6 +30,13 @@ export default function Polish() {
     'https://wordwall.net/pl/resource/65077371/polski-dla-cudzoziemc%c3%b3w/dialogi-pytania-i-odpowiedzi-kawiarnia';
   const linkserwisy =
     'https://wordwall.net/pl/resource/75115556/polski-dla-cudzoziemc%c3%b3w/serwisy-i-us%c5%82ugi';
+
+  ///
+
+  const linkpoczta = 'https://wordwall.net/pl/resource/94571842';
+  const linkpoczta_kurier = 'https://wordwall.net/pl/resource/94571691';
+  const linkpogoda = 'hhttps://wordwall.net/pl/resource/94498315';
+  const linkporyroku = 'https://wordwall.net/pl/resource/94498959';
 
   return (
     <>
@@ -110,7 +122,6 @@ export default function Polish() {
               </Link>
             </Box>
           </Grid>
-
           <Grid item xs={6}>
             <Link href={linkniebieskiptak}>
               <Box
@@ -183,6 +194,103 @@ export default function Polish() {
               </Link>
             </Box>
           </Grid>
+          <Grid item xs={6}>
+            <Link href={linkpoczta}>
+              <Box
+                component="img"
+                width={{ xs: '100%', lg: 500 }}
+                sx={{
+                  height: 'auto',
+                }}
+                alt="poczta"
+                src={poczta}
+              />
+            </Link>
+            <Box sx={{ '& > :not(style)': { m: 1 } }}>
+              <Link href={linkpoczta}>
+                <Fab
+                  variant="extended"
+                  sx={{ marginTop: 1, backgroundColor: '#CBDFFA' }}
+                >
+                  <PlayCircleIcon sx={{ mr: 1 }} />
+                  Zagraj
+                </Fab>
+              </Link>
+            </Box>
+          </Grid>
+          <Grid item xs={6}>
+            <Link href={linkpoczta_kurier}>
+              <Box
+                component="img"
+                width={{ xs: '100%', lg: 500 }}
+                sx={{
+                  height: 'auto',
+                }}
+                alt="poczta_kurier"
+                src={poczta_kurier}
+              />
+            </Link>
+            <Box sx={{ '& > :not(style)': { m: 1 } }}>
+              <Link href={linkpoczta_kurier}>
+                <Fab
+                  variant="extended"
+                  sx={{ marginTop: 1, backgroundColor: '#CBDFFA' }}
+                >
+                  <PlayCircleIcon sx={{ mr: 1 }} />
+                  Zagraj
+                </Fab>
+              </Link>
+            </Box>
+          </Grid>
+          <Grid item xs={6}>
+            <Link href={linkpogoda}>
+              <Box
+                component="img"
+                width={{ xs: '100%', lg: 500 }}
+                sx={{
+                  height: 'auto',
+                }}
+                alt="pogoda"
+                src={pogoda}
+              />
+            </Link>
+            <Box sx={{ '& > :not(style)': { m: 1 } }}>
+              <Link href={linkpogoda}>
+                <Fab
+                  variant="extended"
+                  sx={{ marginTop: 1, backgroundColor: '#CBDFFA' }}
+                >
+                  <PlayCircleIcon sx={{ mr: 1 }} />
+                  Zagraj
+                </Fab>
+              </Link>
+            </Box>
+          </Grid>
+          <Grid item xs={6}>
+            <Link href={linkporyroku}>
+              <Box
+                component="img"
+                width={{ xs: '100%', lg: 500 }}
+                sx={{
+                  height: 'auto',
+                }}
+                alt="poryroku"
+                src={poryroku}
+              />
+            </Link>
+            <Box sx={{ '& > :not(style)': { m: 1 } }}>
+              <Link href={linkporyroku}>
+                <Fab
+                  variant="extended"
+                  sx={{ marginTop: 1, backgroundColor: '#CBDFFA' }}
+                >
+                  <PlayCircleIcon sx={{ mr: 1 }} />
+                  Zagraj
+                </Fab>
+              </Link>
+            </Box>
+          </Grid>
+          ///
         </Grid>
       </Box>
       <BottomAppBar></BottomAppBar>

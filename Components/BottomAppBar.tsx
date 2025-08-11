@@ -22,7 +22,7 @@ export default function BottomAppBar() {
           <Typography style={{ color: '#fff' }}>+48 534 993 080</Typography>
 
           <Typography variant="caption" style={{ color: '#fff' }}>
-            © Polish Club 2024
+            © Polish Club 2025
           </Typography>
         </Box>
       </AppBar>
