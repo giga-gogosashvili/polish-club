@@ -5,6 +5,12 @@ import malediwy from '../public/assets/Tasks/malediwy.png';
 import pieknypolska from '../public/assets/Tasks/pieknypolska.png';
 import jedzeniezregionow from '../public/assets/Tasks/jedzeniezregionow.png';
 
+//
+import polska from '../public/assets/Tasks/polska.png';
+import polskawpigulce from '../public/assets/Tasks/polskawpigulce.png';
+import bebok from '../public/assets/Tasks/bebok.png';
+import syrenka from '../public/assets/Tasks/syrenka.png';
+
 import cities from '../public/assets/cities.png';
 import { Typography } from '@mui/material';
 import Link from '@mui/material/Link';
@@ -25,7 +31,11 @@ export default function Cities() {
     'https://wordwall.net/pl/resource/72637862/polski-dla-cudzoziemc%c3%b3w/polska';
   const linkjedzeniezregionow =
     'https://wordwall.net/pl/resource/73376600/polski-dla-cudzoziemc%c3%b3w/polskie-produkty';
-
+  //
+  const linkpolska = 'https://wordwall.net/pl/resource/93038422';
+  const linkpolskawpigulce = 'https://wordwall.net/pl/resource/92867714';
+  const linkbebok = 'https://wordwall.net/pl/resource/87192548';
+  const linksyrenka = 'https://wordwall.net/pl/resource/88767220';
   return (
     <>
       <Box sx={{ flexGrow: 1 }} alignItems="center">
@@ -174,6 +184,102 @@ export default function Cities() {
             </Link>
             <Box sx={{ '& > :not(style)': { m: 1 } }}>
               <Link href={linkjedzeniezregionow}>
+                <Fab
+                  variant="extended"
+                  sx={{ marginTop: 1, backgroundColor: '#CBDFFA' }}
+                >
+                  <PlayCircleIcon sx={{ mr: 1 }} />
+                  Zagraj
+                </Fab>
+              </Link>
+            </Box>
+          </Grid>
+          <Grid item xs={6}>
+            <Link href={linkpolska}>
+              <Box
+                component="img"
+                width={{ xs: '100%', lg: 500 }}
+                sx={{
+                  height: 'auto',
+                }}
+                alt="polska"
+                src={polska}
+              />
+            </Link>
+            <Box sx={{ '& > :not(style)': { m: 1 } }}>
+              <Link href={linkpolska}>
+                <Fab
+                  variant="extended"
+                  sx={{ marginTop: 1, backgroundColor: '#CBDFFA' }}
+                >
+                  <PlayCircleIcon sx={{ mr: 1 }} />
+                  Zagraj
+                </Fab>
+              </Link>
+            </Box>
+          </Grid>
+          <Grid item xs={6}>
+            <Link href={linkpolskawpigulce}>
+              <Box
+                component="img"
+                width={{ xs: '100%', lg: 500 }}
+                sx={{
+                  height: 'auto',
+                }}
+                alt="polskawpigulce"
+                src={polskawpigulce}
+              />
+            </Link>
+            <Box sx={{ '& > :not(style)': { m: 1 } }}>
+              <Link href={linkpolskawpigulce}>
+                <Fab
+                  variant="extended"
+                  sx={{ marginTop: 1, backgroundColor: '#CBDFFA' }}
+                >
+                  <PlayCircleIcon sx={{ mr: 1 }} />
+                  Zagraj
+                </Fab>
+              </Link>
+            </Box>
+          </Grid>
+          <Grid item xs={6}>
+            <Link href={linkbebok}>
+              <Box
+                component="img"
+                width={{ xs: '100%', lg: 500 }}
+                sx={{
+                  height: 'auto',
+                }}
+                alt="bebok"
+                src={bebok}
+              />
+            </Link>
+            <Box sx={{ '& > :not(style)': { m: 1 } }}>
+              <Link href={linkbebok}>
+                <Fab
+                  variant="extended"
+                  sx={{ marginTop: 1, backgroundColor: '#CBDFFA' }}
+                >
+                  <PlayCircleIcon sx={{ mr: 1 }} />
+                  Zagraj
+                </Fab>
+              </Link>
+            </Box>
+          </Grid>
+          <Grid item xs={6}>
+            <Link href={linksyrenka}>
+              <Box
+                component="img"
+                width={{ xs: '100%', lg: 500 }}
+                sx={{
+                  height: 'auto',
+                }}
+                alt="syrenka"
+                src={syrenka}
+              />
+            </Link>
+            <Box sx={{ '& > :not(style)': { m: 1 } }}>
+              <Link href={linksyrenka}>
                 <Fab
                   variant="extended"
                   sx={{ marginTop: 1, backgroundColor: '#CBDFFA' }}
